@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="file-result-container">
+
+    <h1>Download the Validated Email file</h1>
+    <div>
+        <a id="download-button" href="{{ url_for('download_file', filename=filename) }}" download>Download Processed
+            CSV</a>
+
+    </div>
+</section>
+{% endblock content %}
